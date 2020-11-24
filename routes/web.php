@@ -19,7 +19,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function() {
     Route::get('post/create', 'Admin\PostController@create');
     Route::post('post/create', 'Admin\PostController@post');
     Route::get('post/edit', 'Admin\PostController@edit');
-    Route::get('post/list', 'Admin\PostController@list');
+    Route::get('post', 'Admin\PostController@index');
 });
 
 Route::get('post/login', 'PostController@login');

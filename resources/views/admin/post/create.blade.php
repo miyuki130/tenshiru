@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title','てんしる')
+@section('title','管理者画面')
 
 @section('content')
     <div class="container">
@@ -40,24 +40,24 @@
                     <p>危険度</p>
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="lisk" id="one" checked>
+                        <input class="form-check-input" type="radio" name="lisk" id="one">
                         <label class="form-check-label" for="one">危険度★</label>
                     </div>
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="lisk" id="two" checked>
+                        <input class="form-check-input" type="radio" name="lisk" id="two">
                         <label class="form-check-label" for="two">危険度★★</label>
                     </div>
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="lisk" id="three" checked>
+                        <input class="form-check-input" type="radio" name="lisk" id="three">
                         <label class="form-check-label" for="three">危険度★★★</label>
                     </div>
                     
                     <div class="form-group row">
                         <label class="col-md-2">イラスト</label>
                         <div class="col-md-10">
-                            <input type="file" class="form-control-file" name="image" value="{{ old('image') }}">
+                            <input type="file" class="form-control-file" name="image">
                         </div>
                     </div>
                     
@@ -68,8 +68,4 @@
             </div>
         </div>    
     </div>
-@endsection
-
-@section('footer')
-copyright 2020 miyuki.
 @endsection

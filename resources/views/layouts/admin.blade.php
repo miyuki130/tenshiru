@@ -27,6 +27,10 @@
     <body>
         <h1>@yield('title')</h1>
             @yield('content')
-            @yield('footer')
+            
+            <footer class="footer">
+                copyright 2020 miyuki.
+            </footer>
+            
     </body>
 </html>
