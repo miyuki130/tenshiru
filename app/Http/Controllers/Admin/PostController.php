@@ -38,12 +38,14 @@ class Postcontroller extends Controller
     
     public function index(Request $request)
     {
-        $cond_title = $request->cond_title;
-        if ($cond_title != '') {
-            $posts = Post::where('title', $cond_title)->get();
+        $input = $request->input;
+        if ($input != '') {
+        $posts = Post::where('additive', 'like',"%{$input}%")->get();
+        
         } else {
             $posts = Post::all();
         }
-        return view('admin.post.index', ['posts' => $posts, 'cond_title' => $cond_title]);
+        return view('admin.post.index', ['posts' => $posts, 'input' => $input]);
     }
+    
 }

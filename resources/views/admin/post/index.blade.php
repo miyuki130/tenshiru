@@ -14,9 +14,9 @@
             <div class="col-md-8">
                 <form action="{{ action('Admin\PostController@index') }}" method="get">
                     <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
+                        <label class="col-md-2">添加物名</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
+                            <input type="text" class="form-control" name="input" value="{{ $input }}">
                         </div>
                         <div class="col-md-2">
                             {{ csrf_field() }}
@@ -46,7 +46,7 @@
                         <td>{{ $post->purpose,}}</td>
                         <td>{{ $post->dangerous,}}</td>
                         <td>{{ $post->lisk,}}</td>
-                        <td>{{ $post->image,}}</td>
+                        <td>{{ $post->image_path,}}</td>
                     </tr>
                     @endforeach
                 </tbody>
