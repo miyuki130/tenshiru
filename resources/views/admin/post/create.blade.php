@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>投稿画面</h2>
-                <form action="{{ action('Admin\PostController@post') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ action('Admin\PostController@create') }}" method="post" enctype="multipart/form-data">
                     
                     @if (count($errors) > 0)
                         <ul>
@@ -19,40 +19,29 @@
                     <div class="form-group row">
                         <label class="col-md-2">添加物名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="additive" value="{{ old('additive') }}">
+                            <input type="text" class="form-control" name="additive">
                         </div>
                     </div>
                     
                     <div class="form-group row">
                         <label class="col-md-2">目的・効果</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="purpose" rows="5">{{ old('purpose') }}</textarea>
+                            <textarea class="form-control" name="purpose" rows="5"></textarea>
                         </div>
                     </div>
                     
                     <div class="form-group row">
                         <label class="col-md-2">どう危険か</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="dangerous" rows="5">{{ old('dangerous') }}</textarea>
+                            <textarea class="form-control" name="dangerous" rows="5"></textarea>
                         </div>
                     </div>
                     
                     <p>危険度</p>
                     
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="lisk" id="one">
-                        <label class="form-check-label" for="one">危険度★</label>
-                    </div>
-                    
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="lisk" id="two">
-                        <label class="form-check-label" for="two">危険度★★</label>
-                    </div>
-                    
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="lisk" id="three">
-                        <label class="form-check-label" for="three">危険度★★★</label>
-                    </div>
+                        <p><input type="radio" name="lisk" value="危険度★">危険度★</label></p>
+                        <p><input type="radio" name="lisk" value="危険度★★">危険度★★</label></p>
+                        <p><input type="radio" name="lisk" value="危険度★★★">危険度★★★</label></p>
                     
                     <div class="form-group row">
                         <label class="col-md-2">イラスト</label>

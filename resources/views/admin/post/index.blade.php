@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href ="{{ action('Admin\PostController@create') }}" role="button" class="btn btn-primary">投稿</a>
+                <a href ="{{ action('Admin\PostController@add') }}" role="button" class="btn btn-primary">新規投稿</a>
             </div>
             <div class="col-md-8">
                 <form action="{{ action('Admin\PostController@index') }}" method="get">
@@ -45,8 +45,16 @@
                         <td>{{ $post->additive,}}</td>
                         <td>{{ $post->purpose,}}</td>
                         <td>{{ $post->dangerous,}}</td>
-                        <td>{{ $post->lisk,}}</td>
+                        <td>{{ $post->lisk }}</td>
                         <td>{{ $post->image_path,}}</td>
+                        <td>
+                        <div>
+                            <a href="{{ action('Admin\PostController@edit', ['id' => $post->id]) }}">編集</a>
+                        </div>
+                        <div>
+                            <a href="{{ action('Admin\PostController@delete', ['id' => $post->id]) }}">削除</a>
+                        </div>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
