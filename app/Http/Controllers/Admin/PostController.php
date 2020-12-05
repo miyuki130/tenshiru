@@ -42,8 +42,14 @@ class Postcontroller extends Controller
         $posts = Post::where('additive', 'like',"%{$input}%")->get();
         
         } else {
-            $posts = Post::all();
+            $posts = Post::all()->sortBy('additive');
         }
+        
+        // $posts = Post::when($request->input,function($q, $v){
+        //     $qwhere('additive', 'like',"%{$v}%");
+        // })->get();
+
+        
         return view('admin.post.index', ['posts' => $posts, 'input' => $input]);
     }
     
@@ -63,7 +69,6 @@ class Postcontroller extends Controller
         $post = Post::find($request->id);
         $form = $request->all();
         
-        
         if ($request->remove == 'true') {
           $form['image_path'] = null;
       } elseif ($request->file('image')) {
@@ -73,10 +78,8 @@ class Postcontroller extends Controller
           $form['image_path'] = $post->image_path;
       }
 
-      unset($form['image']);
-      unset($form['remove']);
-        
-        
+        unset($form['image']);
+        unset($form['remove']);
         unset($form['_token']);
         $post->fill($form)->save();
         
@@ -86,7 +89,7 @@ class Postcontroller extends Controller
     public function delete(Request $request)
     {
         $post = Post::find($request->id);
-     
+        
         $post->delete();
         return redirect('admin/post');
     }

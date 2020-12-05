@@ -35,7 +35,8 @@
                         <th width="20%">目的・効果</th>
                         <th width="20%">どう危険か</th>
                         <th width="10%">危険度</th>
-                        <th width="20%">イラスト</th>
+                        <th width="10%">イラスト</th>
+                        <th width="10%">操作</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,14 +47,16 @@
                         <td>{{ $post->purpose,}}</td>
                         <td>{{ $post->dangerous,}}</td>
                         <td>{{ $post->lisk }}</td>
-                        <td>{{ $post->image_path,}}</td>
                         <td>
-                        <div>
+                             <img src="{{ \Storage::url("image/".$post->image_path) }}" style="max-height:4rem;">
+                        </td>
+                        <td>
+                            <div>
                             <a href="{{ action('Admin\PostController@edit', ['id' => $post->id]) }}">編集</a>
-                        </div>
-                        <div>
+                            </div>
+                            <div>
                             <a href="{{ action('Admin\PostController@delete', ['id' => $post->id]) }}">削除</a>
-                        </div>
+                            </div>
                         </td>
                     </tr>
                     @endforeach

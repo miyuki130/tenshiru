@@ -34,3 +34,5 @@ Route::get('post/detail', 'PostController@detail');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('post','PostController@index');

@@ -1,0 +1,25 @@
+body {
+  color: #000;
+}
+
+.posts .post .additive {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.posts .post .purpose {
+  font-size: 1em;
+}
+
+.posts .post .dangerous {
+  font-size: 1em;
+}
+
+.posts .post .lisk {
+  font-size: 1em;
+}
+
+.footer {
+  text-align: center;
+}
+
