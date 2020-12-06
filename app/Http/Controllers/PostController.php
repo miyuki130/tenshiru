@@ -18,4 +18,11 @@ class PostController extends Controller
         
         return view('post.index',['posts' => $posts,'input' => $input]);
     }
+    
+    public function show(Request $request)
+    {
+        $post = Post::find($request->id);
+        
+        return view('post.show',['post' => $post]);
+    }
 }

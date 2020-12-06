@@ -4,30 +4,14 @@
 
 @section('content')
     <div class="container">
-        <div class "row">
-            <div class= "col-md-7 offset-md-5">
-                <form action="{{ action('PostController@index') }}" method="get">
-                    <div class="form-group row">
-                        <label class="col-md-2">添加物名</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" name="input" value="{{ $input }}">
-                        </div>
-                        <div class="col-md-2">
-                            {{ csrf_field() }}
-                            <input type="submit" class="btn btn-primary" value="検索">
-                        </div>
-                    </div>    
-                </form>
-            </div>
-        </div>
+        <h1>もっと詳しく！</h1>
         <div class="row">
             <div class="posts col-md-10 mx-auto mt-2">
-                @foreach($posts as $post) 
                     <div class="post">
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="additive">
-                                    <a href="{{ action('PostController@show', ['id' => $post->id]) }}">{{ $post->additive }}</a>
+                                    {{ $post->additive }}
                                 </div>
                             </div>
                             <div class="col-md-9">
@@ -54,9 +38,13 @@
                             </div>
                         </div>
                     </div>    
-                <hr color="#cd853f">
-                @endforeach
             </div>
-        </div> 
+        </div>
+        <div>
+            <h2>管理人miyukiからの一言</h2>
+        </div>
+        <div>
+            <h2>{{ $post->additive }}を使用していないおすすめの商品</h2>
+        </div>
     </div>
 @endsection

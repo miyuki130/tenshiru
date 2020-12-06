@@ -27,12 +27,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function() {
 
 //Route::get('post/create', 'Admin\PostController@add');は、post/createにアクセスが来たらAdmin\PostControllerのaddアクションに渡すことを表している
 
-Route::get('post/login', 'PostController@login');
-Route::get('post/', 'PostController@index');
-Route::get('post/detail', 'PostController@detail');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('post','PostController@index');
+Route::get('post/show','PostController@show');

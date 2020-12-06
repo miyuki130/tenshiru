@@ -32,8 +32,8 @@
                     <tr>
                         <th width="10%">ID</th>
                         <th width="20%">添加物名</th>
-                        <th width="20%">目的・効果</th>
-                        <th width="20%">どう危険か</th>
+                        <th width="20%">使用目的</th>
+                        <th width="20%">危険性</th>
                         <th width="10%">危険度</th>
                         <th width="10%">イラスト</th>
                         <th width="10%">操作</th>

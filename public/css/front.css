@@ -1,5 +1,10 @@
 body {
-  color: #000;
+  color: #523239;
+  background-color: #ffe0b6;
+}
+
+.post {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .posts .post .additive {
