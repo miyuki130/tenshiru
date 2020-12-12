@@ -31,3 +31,4 @@ Auth::routes();
 
 Route::get('post','PostController@index');
 Route::get('post/show','PostController@show');
+Route::get('post/about','PostController@about');

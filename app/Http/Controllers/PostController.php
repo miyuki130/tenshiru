@@ -25,4 +25,9 @@ class PostController extends Controller
         
         return view('post.show',['post' => $post]);
     }
+    
+    public function about(Request $request)
+    {
+        return view('post.about');
+    }
 }

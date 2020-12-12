@@ -32,6 +32,11 @@
             
             <footer class="footer">
                 copyright 2020 miyuki.
+                
+                <p>
+                <a href="{{ action('PostController@about')}}">このサイトについて</a> 
+                </p>
+                
             </footer>
             
     </body>
