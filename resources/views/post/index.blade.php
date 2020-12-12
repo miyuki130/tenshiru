@@ -4,11 +4,11 @@
 
 @section('content')
     <div class="container">
-        <div class "row">
+        <div class="row">
             <div class= "col-md-7 offset-md-5">
                 <form action="{{ action('PostController@index') }}" method="get">
                     <div class="form-group row">
-                        <label class="col-md-2">添加物名</label>
+                        <label class="align-self-center my-0 text-right col-md-2">添加物名</label>
                         <div class="col-md-8">
                             <input type="text" class="form-control" name="input" value="{{ $input }}">
                         </div>
@@ -54,7 +54,9 @@
                             </div>
                         </div>
                     </div>    
-                <hr color="#cd853f">
+
+                <hr style="color:#cd853f;">
+                
                 @endforeach
             </div>
         </div> 

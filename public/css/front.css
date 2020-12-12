@@ -1,27 +1,32 @@
-body {
-  color: #523239;
-  background-color: #ffe0b6;
+html {
+  font-size: 15px;
+  height: 100%;
 }
 
-.post {
+body {
+  color: #523239;
+  background-color: #f1e2be;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
   font-family: "Noto Sans JP", sans-serif;
+  flex: 1;
 }
 
 .posts .post .additive {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.posts .post .purpose {
-  font-size: 1em;
+.h1 {
+  font-size: 2rem;
 }
 
-.posts .post .dangerous {
-  font-size: 1em;
-}
-
-.posts .post .lisk {
-  font-size: 1em;
+.h2 {
+  font-size: 1.8rem;
 }
 
 .footer {

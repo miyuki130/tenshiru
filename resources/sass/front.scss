@@ -1,30 +1,37 @@
+html {
+  font-size: 15px;
+  height: 100%;
+}
+
 body {
   color: #523239;
-  background-color: #ffe0b6;
+  background-color: #f1e2be;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.post{
+.container {
   font-family: 'Noto Sans JP', sans-serif;
+  flex: 1;
 }
 
-.posts{
+.posts {
   .post {
     .additive {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       font-weight: bold;
-    }
-    .purpose {
-      font-size: 1.0em;
-    }
-    
-    .dangerous {
-      font-size: 1.0em;
-    }
-    .lisk {
-      font-size: 1.0em;
     }
   }
 }  
+
+.h1 {
+  font-size: 2.0rem;
+}
+
+.h2 {
+  font-size: 1.8rem;
+}
 
 .footer {
   text-align: center;
