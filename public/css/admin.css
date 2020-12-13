@@ -18,6 +18,14 @@ body {
   flex: 1;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 .navbar-laravel {
   background-color: #d3c1af;
 }

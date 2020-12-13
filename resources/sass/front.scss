@@ -25,14 +25,24 @@ body {
   }
 }  
 
-.h1 {
+h1 {
+  font-size: 3.0rem;
+}
+
+h2 {
   font-size: 2.0rem;
 }
 
-.h2 {
-  font-size: 1.8rem;
+h3 {
+  font-size: 1.4rem;
+}
+
+.pagination{
+  font-seize: 1.3rem;
+  justify-content: center;
 }
 
 .footer {
   text-align: center;
 }
+

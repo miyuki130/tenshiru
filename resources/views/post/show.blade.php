@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        <h1>もっと詳しく！</h1>
+        <h2>もっと詳しく！</h2>
         <div class="row">
             <div class="posts col-md-10 mx-auto mt-2">
                     <div class="post">
@@ -41,10 +41,10 @@
             </div>
         </div>
         <div>
-            <h2>管理人miyukiからの一言</h2>
+            <h3>管理人miyukiからの一言</h3>
         </div>
         <div>
-            <h2>{{ $post->additive }}を使用していないおすすめの商品</h2>
+            <h3>{{ $post->additive }}を使用していないおすすめの商品</h3>
         </div>
     </div>
 @endsection
