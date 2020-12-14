@@ -19,23 +19,13 @@ body {
 }
 
 h1 {
+  font-family: 'Kosugi Maru', sans-serif;
   font-size: 3.0rem;
+  color: #fa9a50;
 }
 
 h2 {
   font-size: 2.0rem;
-}
-
-.navbar-laravel {
-  background-color: #d3c1af;
-}
-
-.navbar-brand {
-  color: #fff !important;
-}
-
-.nav-link {
-  color: #fff !important;
 }
 
 .table {
@@ -48,18 +38,25 @@ h2 {
   background-color: #f5d7c6;
 }
 
-.login-box {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.login-header {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.login-body {
-  background-color: rgba(0, 0, 0, 0.25);
+.pagination{
+  font-seize: 1.3rem;
+  justify-content: center;
 }
 
 .footer {
   text-align: center;
+}
+
+.breadcrumb {
+  background-color: #f5d7c6;
+  font-size: 1.1rem;
+}
+
+.subtitle {
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 1.1rem;
+}
+
+.orange {
+  color: #fa9a50;
 }

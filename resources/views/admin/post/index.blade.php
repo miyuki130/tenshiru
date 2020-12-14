@@ -1,11 +1,18 @@
 @extends('layouts.admin')
 
-@section('title', '管理者画面')
+@section('title','てんしる')
+    <div class="subtitle">〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">管理画面ＴＯＰ</li>
+        </ol>
+    </nav>
 
 @section('content')
     <div class="container">
         <div class="row">
-                <h2>投稿一覧</h2>
+                <h2>管理者用　投稿一覧</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -64,4 +71,7 @@
             </table>    
         </div>
     </div>
+    
+    {{ $posts->links() }}
+    
 @endsection

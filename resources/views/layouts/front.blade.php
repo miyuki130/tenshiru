@@ -16,7 +16,8 @@
         {{--Laravel標準で用意されているJavascriptを読み込む--}}
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
         {{-- Googleフォントを読み込む --}}
         
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">

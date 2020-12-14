@@ -1,12 +1,20 @@
 @extends('layouts.admin')
 
-@section('title','管理者画面')
+@section('title','てんしる')
+    <div class="subtitle">〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
+    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ action('Admin\PostController@index') }}">管理画面ＴＯＰ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">投稿画面</li>
+        </ol>
+    </nav> 
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>投稿画面</h2>
+                <h2>管理者用　投稿画面</h2>
                 <form action="{{ action('Admin\PostController@create') }}" method="post" enctype="multipart/form-data">
                     
                     @if (count($errors) > 0)

@@ -22,7 +22,9 @@ body {
 }
 
 h1 {
+  font-family: "Kosugi Maru", sans-serif;
   font-size: 3rem;
+  color: #fa9a50;
 }
 
 h2 {
@@ -40,5 +42,19 @@ h3 {
 
 .footer {
   text-align: center;
+}
+
+.breadcrumb {
+  background-color: #f1e2be;
+  font-size: 1.1rem;
+}
+
+.subtitle {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 1.1rem;
+}
+
+.orange {
+  color: #fa9a50;
 }
 
