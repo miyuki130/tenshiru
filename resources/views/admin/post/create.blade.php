@@ -1,16 +1,16 @@
 @extends('layouts.admin')
 
 @section('title','てんしる')
-    <div class="subtitle">〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
-    
+
+@section('content')
+
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ action('Admin\PostController@index') }}">管理画面ＴＯＰ</a></li>
             <li class="breadcrumb-item active" aria-current="page">投稿画面</li>
         </ol>
     </nav> 
-
-@section('content')
+    
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">

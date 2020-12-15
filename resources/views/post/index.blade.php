@@ -1,15 +1,15 @@
 @extends('layouts.front')
 
 @section('title','てんしる')
-    <div class="subtitle">〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
+
+@section('content')
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">てんしるＴＯＰ</li>
         </ol>
-    </nav>    
+    </nav>
 
-@section('content')
     <div class="container">
         <div class="row">
             <div class= "col-md-7 offset-md-5">

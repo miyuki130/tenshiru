@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5d7c6;
-  color: #000;
+  color: #523239;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -18,9 +18,23 @@ body {
   flex: 1;
 }
 
-h1 {
+.title {
   font-family: 'Kosugi Maru', sans-serif;
+  display: flex;
+  align-items: baseline;
+  height: 10vh;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+h1 {
   font-size: 3.0rem;
+  color: #fa9a50;
+}
+
+.orange {
   color: #fa9a50;
 }
 
@@ -50,13 +64,4 @@ h2 {
 .breadcrumb {
   background-color: #f5d7c6;
   font-size: 1.1rem;
-}
-
-.subtitle {
-  font-family: 'Kosugi Maru', sans-serif;
-  font-size: 1.1rem;
-}
-
-.orange {
-  color: #fa9a50;
 }

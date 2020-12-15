@@ -25,7 +25,10 @@
         
     </head>
     <body>
-        <h1>@yield('title')</h1>
+        <div class="title">
+        <h1>てんしる</h1>
+            <div class="subtitle">　〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
+        </div>    
         
             @yield('content')
             

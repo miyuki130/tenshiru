@@ -21,9 +21,23 @@ body {
   font-weight: bold;
 }
 
-h1 {
+.title {
   font-family: "Kosugi Maru", sans-serif;
+  display: flex;
+  align-items: baseline;
+  height: 10vh;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+h1 {
   font-size: 3rem;
+  color: #fa9a50;
+}
+
+.orange {
   color: #fa9a50;
 }
 
@@ -49,12 +63,36 @@ h3 {
   font-size: 1.1rem;
 }
 
-.subtitle {
-  font-family: "Kosugi Maru", sans-serif;
-  font-size: 1.1rem;
+.word {
+  width: 100%;
+  display: flex;
 }
 
-.orange {
-  color: #fa9a50;
+.comment {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #523239;
+  font-size: 1rem;
+  background: #f1ccbe;
+  border-radius: 15px;
+}
+
+.comment:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #f1ccbe;
+}
+
+.comment p {
+  margin: 0;
+  padding: 0;
 }
 

@@ -1,16 +1,16 @@
 @extends('layouts.front')
 
 @section('title','てんしる')
-    <div class="subtitle">〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
+
+@section('content')
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ action('PostController@index') }}">てんしるＴＯＰ</a></li>
             <li class="breadcrumb-item active" aria-current="page">もっと詳しく</li>
         </ol>
-    </nav>    
-
-@section('content')
+    </nav> 
+    
     <div class="container">
         <h2>もっと詳しく！</h2>
         <div class="row">
@@ -50,9 +50,17 @@
         </div>
         <div>
             <h3>管理人miyukiからの一言</h3>
-            <p>
-            <img src="{{ asset('image/xxx') }}" alt="フクロウ博士">
-            </p>
+
+            <div class="word">
+                <div class="illustration">
+                <img src="{{ secure_asset('storage/image/博士.png') }}" alt="フクロウ博士" style="max-height:7rem;">
+                </div>
+                <div class="comment">
+                        <p>★文章を入れる★テストテストテストテストテストテスト</p>
+                </div>
+            </div>
+            
+            
         </div>
         <div>
             <h3>{{ $post->additive }}を使用していないおすすめの商品</h3>
