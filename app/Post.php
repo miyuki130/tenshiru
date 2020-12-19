@@ -10,8 +10,10 @@ class Post extends Model
     
     public static $rules = array(
         'additive' => 'required',
+        'hurigana' => 'required',
         'purpose' => 'required',
         'dangerous' => 'required',
+        'comment' => 'required',
         'lisk' => 'required',
         );
 }

@@ -25,10 +25,17 @@
                         </ul>
                 @endif
                 
-                <div class="form-group row">
+                    <div class="form-group row">
                         <label class="col-md-2">添加物名</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="additive" value="{{ $form->additive }}">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-md-2">ふりがな</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="furigana" value="{{ $form->hurigana }}">
                         </div>
                     </div>
                     
@@ -43,6 +50,13 @@
                         <label class="col-md-2">どう危険か</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="dangerous" rows="5">{{ $form->dangerous }}</textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-md-2">管理人の一言</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="comment" rows="5">{{ $form->comment }}</textarea>
                         </div>
                     </div>
                     

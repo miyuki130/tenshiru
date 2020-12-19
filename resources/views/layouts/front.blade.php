@@ -10,7 +10,7 @@
         
         <title>@yield('title')</title>
         
-        <meta name="description" content="頻繁に使用されている食品添加物とその危険性">
+        <meta name="description" content="〜食品添加物について知ることで健康になろう〜">
         
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
         {{--Laravel標準で用意されているJavascriptを読み込む--}}
@@ -38,10 +38,12 @@
             <footer class="footer">
                 copyright 2020 miyuki.
                 
-                <p>
+                <div class="information">
                 <a href="{{ action('PostController@about')}}">このサイトについて</a> 
-                </p>
-                
+                <div class="shikiri">  |  </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1Jt3SrHYvG8PARWW1gBfFu1uEAdCdYuKQxeQ0KYK1hKQFwA/viewform?usp=sf_link">お問い合わせ</a>
+                </div>
+                    
             </footer>
             
     </body>

@@ -32,6 +32,13 @@
                     </div>
                     
                     <div class="form-group row">
+                        <label class="col-md-2">ふりがな</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="hurigana">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
                         <label class="col-md-2">目的・効果</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="purpose" rows="5"></textarea>
@@ -42,6 +49,13 @@
                         <label class="col-md-2">どう危険か</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="dangerous" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-md-2">管理人の一言</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="comment" rows="5"></textarea>
                         </div>
                     </div>
                     

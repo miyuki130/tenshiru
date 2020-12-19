@@ -48,7 +48,7 @@
                     </div>    
             </div>
         </div>
-        <div>
+        <div class="hitokoto">
             <h3>管理人miyukiからの一言</h3>
 
             <div class="word">
@@ -56,14 +56,9 @@
                 <img src="{{ secure_asset('storage/image/博士.png') }}" alt="フクロウ博士" style="max-height:7rem;">
                 </div>
                 <div class="comment">
-                        <p>★文章を入れる★テストテストテストテストテストテスト</p>
+                        <p>{{ $post->comment }}</p>
                 </div>
             </div>
-            
-            
-        </div>
-        <div>
-            <h3>{{ $post->additive }}を使用していないおすすめの商品</h3>
         </div>
     </div>
 @endsection

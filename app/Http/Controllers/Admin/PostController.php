@@ -50,7 +50,6 @@ class Postcontroller extends Controller
         //     $qwhere('additive', 'like',"%{$v}%");
         // })->get();
 
-        
         return view('admin.post.index', ['posts' => $posts, 'input' => $input]);
     }
     
