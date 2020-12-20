@@ -13,6 +13,7 @@
     <div class="container">
         <div class="row">
             <div class= "col-md-7 offset-md-5">
+                <div class= "search">
                 <form action="{{ action('PostController@index') }}" method="get">
                     <div class="form-group row">
                         <label class="align-self-center my-0 text-right col-md-2">添加物名</label>
@@ -25,6 +26,7 @@
                         </div>
                     </div>    
                 </form>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -34,7 +36,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="additive">
-                                    <a href="{{ action('PostController@show', ['id' => $post->id]) }}">{{ $post->additive }}</a>
+                                    {{ $post->additive }}
                                 </div>
                             </div>
                             <div class="col-md-9">
@@ -57,6 +59,9 @@
                             <div class="col-md-2">
                                 <div class="lisk">
                                     {{ $post->lisk }}
+                                </div>
+                                <div class="more">
+                                    <a href="{{ action('PostController@show', ['id' => $post->id]) }}">もっと詳しく</a>
                                 </div>
                             </div>
                         </div>

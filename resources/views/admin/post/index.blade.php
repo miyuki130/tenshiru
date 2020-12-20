@@ -53,7 +53,7 @@
                         <td>{{ $post->additive,}}</td>
                         <td>{{ $post->purpose,}}</td>
                         <td>{{ $post->dangerous,}}</td>
-                        <td>{{ $post->lisk }}</td>
+                        <td>{{ $post->lisk,}}</td>
                         <td>
                              <img src="{{ \Storage::url("image/".$post->image_path) }}" style="max-height:4rem;">
                         </td>

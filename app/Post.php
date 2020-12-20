@@ -13,6 +13,7 @@ class Post extends Model
         'hurigana' => 'required',
         'purpose' => 'required',
         'dangerous' => 'required',
+        'example' => 'required',
         'comment' => 'required',
         'lisk' => 'required',
         );

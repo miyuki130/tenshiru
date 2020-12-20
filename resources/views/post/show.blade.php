@@ -12,7 +12,7 @@
     </nav> 
     
     <div class="container">
-        <h2>もっと詳しく！</h2>
+        <h2>もっと詳しく</h2>
         <div class="row">
             <div class="posts col-md-10 mx-auto mt-2">
                     <div class="post">
@@ -42,6 +42,13 @@
                             <div class="col-md-2">
                                 <div class="lisk">
                                     {{ $post->lisk }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 offset-md-3">
+                                <div class="example">
+                                    使用例　：　{{ $post->example }}
                                 </div>
                             </div>
                         </div>

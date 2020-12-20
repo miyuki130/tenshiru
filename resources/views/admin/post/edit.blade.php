@@ -35,7 +35,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">ふりがな</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="furigana" value="{{ $form->hurigana }}">
+                            <input type="text" class="form-control" name="hurigana" value="{{ $form->hurigana }}">
                         </div>
                     </div>
                     
@@ -54,6 +54,13 @@
                     </div>
                     
                     <div class="form-group row">
+                        <label class="col-md-2">使用例</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="example" rows="5">{{ $form->example }}</textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
                         <label class="col-md-2">管理人の一言</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="comment" rows="5">{{ $form->comment }}</textarea>
@@ -62,8 +69,8 @@
                     
                     <p>危険度</p>
                     
-                    <p><input type="radio" name="lisk" value="危険度★" @if ($form->lisk == "危険度★")checked @endif>危険度★</label></p>
-                    <p><input type="radio" name="lisk" value="危険度★★" @if ($form->lisk == "危険度★★")checked @endif>危険度★★</label></p>
+                    <p><input type="radio" name="lisk" value="危険度★☆☆" @if ($form->lisk == "危険度★☆☆")checked @endif>危険度★☆☆</label></p>
+                    <p><input type="radio" name="lisk" value="危険度★★☆" @if ($form->lisk == "危険度★★☆")checked @endif>危険度★★☆</label></p>
                     <p><input type="radio" name="lisk" value="危険度★★★" @if ($form->lisk == "危険度★★★")checked @endif>危険度★★★</label></p>
                     
                     <div class="form-group row">

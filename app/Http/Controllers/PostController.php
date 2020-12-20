@@ -14,7 +14,7 @@ class PostController extends Controller
         $posts = Post::where('additive', 'like',"%{$input}%")->get();
         } else {
             //$posts = Post::all()->sortBy('additive');
-            $posts = Post::orderBy('additive')->paginate(10);
+            $posts = Post::orderBy('hurigana')->paginate(10);
         }
         
         return view('post.index',['posts' => $posts,'input' => $input]);

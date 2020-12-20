@@ -150,6 +150,7 @@ return [
         'hurigana' => 'ふりがな',
         'purpose' => '目的・効果',
         'dangerous' => 'どう危険か',
+        'example' => '使用例',
         'comment' => '管理人の一言',
         'lisk' => '危険度',
         ],

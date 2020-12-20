@@ -47,7 +47,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
+  color: #824921;
 }
 
 h3 {
@@ -111,4 +112,12 @@ h3 {
     display: flex;
     text-align: center;
   }
-}  
+} 
+
+.search {
+  margin: 0 0 20px 0;
+}
+
+.more {
+  margin: 16px 0 0 0;
+}

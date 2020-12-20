@@ -24,6 +24,7 @@
                             @endforeach
                         </ul>
                     @endif
+                    
                     <div class="form-group row">
                         <label class="col-md-2">添加物名</label>
                         <div class="col-md-10">
@@ -53,6 +54,13 @@
                     </div>
                     
                     <div class="form-group row">
+                        <label class="col-md-2">使用例</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="example" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
                         <label class="col-md-2">管理人の一言</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="comment" rows="5"></textarea>
@@ -61,8 +69,8 @@
                     
                     <p>危険度</p>
                     
-                        <p><input type="radio" name="lisk" value="危険度★">危険度★</label></p>
-                        <p><input type="radio" name="lisk" value="危険度★★">危険度★★</label></p>
+                        <p><input type="radio" name="lisk" value="危険度★☆☆">危険度★☆☆</label></p>
+                        <p><input type="radio" name="lisk" value="危険度★★☆">危険度★★☆</label></p>
                         <p><input type="radio" name="lisk" value="危険度★★★">危険度★★★</label></p>
                     
                     <div class="form-group row">
