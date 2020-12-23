@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 @if ($post->image_path)
-                                    <img src="{{ \Storage::url("image/".$post->image_path) }}" style="max-height:4rem;">
+                                    <img src="{{ $post->image_path }}" style="max-height:4rem;">
                                 @endif
                             </div>
                             <div class="col-md-7">

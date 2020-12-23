@@ -55,7 +55,7 @@
                         <td>{{ $post->dangerous,}}</td>
                         <td>{{ $post->lisk,}}</td>
                         <td>
-                             <img src="{{ \Storage::url("image/".$post->image_path) }}" style="max-height:4rem;">
+                             <img src="{{ $post->image_path }}" style="max-height:4rem;">
                         </td>
                         <td>
                             <div>

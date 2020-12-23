@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
+use Storage;
 
 class Postcontroller extends Controller
 {
@@ -21,8 +22,8 @@ class Postcontroller extends Controller
         $form = $request->all();
         
         if (isset($form['image'])) {
-        $path = $request->file('image')->store('public/image');
-        $post->image_path = basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $post->image_path = Storage::disk('s3')->url($path);
       } else {
           $post->image_path = null;
       }
@@ -72,8 +73,10 @@ class Postcontroller extends Controller
         if ($request->remove == 'true') {
           $form['image_path'] = null;
       } elseif ($request->file('image')) {
-          $path = $request->file('image')->store('public/image');
-          $form['image_path'] = basename($path);
+          //$path = $request->file('image')->store('public/image');
+          //$form['image_path'] = basename($path);
+          $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+          $form['image_path'] = Storage::disk('s3')->url($path);
       } else {
           $form['image_path'] = $post->image_path;
       }
