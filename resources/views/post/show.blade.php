@@ -60,7 +60,7 @@
 
             <div class="word">
                 <div class="illustration">
-                <img src="{{ secure_asset('storage/image/博士.png') }}" alt="フクロウ博士" style="max-height:7rem;">
+                <img src="{{ secure_asset('images/teacher.png') }}" alt="フクロウ博士" style="max-height:7rem;">
                 </div>
                 <div class="comment">
                         <p>{{ $post->comment }}</p>
