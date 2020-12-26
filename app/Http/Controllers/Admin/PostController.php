@@ -76,6 +76,7 @@ class Postcontroller extends Controller
           //$path = $request->file('image')->store('public/image');
           //$form['image_path'] = basename($path);
           $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+          //$post->image_path 
           $form['image_path'] = Storage::disk('s3')->url($path);
       } else {
           $form['image_path'] = $post->image_path;
