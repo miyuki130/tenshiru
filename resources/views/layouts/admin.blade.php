@@ -30,12 +30,13 @@
             <div class="subtitle">　〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
         </div>
         
-            <a class="dropdown-item" href="{{ route('logout') }}"
+        <div class="text-right">
+            <a class="btn btn-secondary" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
                     ログアウト
             </a>
-
+        </div>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>

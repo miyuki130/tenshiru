@@ -101,8 +101,10 @@ h3 {
   padding: 0;
 }
 
-.hitokoto {
-  margin: 0 50px;
+@media (min-width: 768px) {
+  .hitokoto {
+    margin: 0 50px;
+  }
 }
 
 .footer .information {
