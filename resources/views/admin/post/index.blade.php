@@ -37,10 +37,10 @@
             <table class="table table-dark">
                 <thead class="thead-light">
                     <tr>
-                        <th width="10%">ID</th>
-                        <th width="20%">添加物名</th>
+                        <th width="15%">添加物名</th>
                         <th width="20%">使用目的</th>
                         <th width="20%">危険性</th>
+                        <th width="15%">使用例</th>
                         <th width="10%">危険度</th>
                         <th width="10%">イラスト</th>
                         <th width="10%">操作</th>
@@ -49,10 +49,10 @@
                 <tbody>
                     @foreach($posts as $post)
                     <tr>
-                        <th>{{ $post->id }}</th>
-                        <td>{{ $post->additive,}}</td>
+                        <th>{{ $post->additive,}}</th>
                         <td>{{ $post->purpose,}}</td>
                         <td>{{ $post->dangerous,}}</td>
+                        <td>{{ $post->example,}}</td>
                         <td>{{ $post->lisk,}}</td>
                         <td>
                              <img src="{{ $post->image_path }}" style="max-height:4rem;">
