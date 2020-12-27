@@ -44,7 +44,7 @@ class Postcontroller extends Controller
         
         } else {
             //$posts = Post::all()->sortBy('additive');
-            $posts = Post::orderBy('hurigana','asc')->paginate(10);
+            $posts = Post::orderBy('lisk','asc')->paginate(10);
         }
         
         // $posts = Post::when($request->input,function($q, $v){

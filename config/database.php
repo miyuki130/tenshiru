@@ -76,7 +76,6 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
-            'collation' => 'utf8',
         ],
 
         'sqlsrv' => [
