@@ -109,7 +109,7 @@ h3 {
 
 .footer .information {
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 
 .search {
@@ -121,14 +121,4 @@ h3 {
 }
 
 /*モバイル版*/
-
-@media (max-width: 600px) {
-  .title {
-    flex-direction: column;
-  }
-
-  .search {
-    display: flex;
-  }
-}
 
