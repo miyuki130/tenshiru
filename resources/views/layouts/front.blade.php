@@ -38,7 +38,7 @@
             <footer class="footer">
                 copyright 2020 miyuki.
                 
-                <div class="information">
+                <div class="information" justify-content-center>
                 <a href="{{ action('PostController@about')}}">このサイトについて</a> 
                 <div class="shikiri">  |  </div>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1Jt3SrHYvG8PARWW1gBfFu1uEAdCdYuKQxeQ0KYK1hKQFwA/viewform?usp=sf_link">お問い合わせ</a>
