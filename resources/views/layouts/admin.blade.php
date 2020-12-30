@@ -26,8 +26,10 @@
     </head>
     <body>
         <div class="title">
+        <div class="row align-items-baseline">
         <h1>てんしる</h1>
-            <div class="subtitle">　〜食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで健康になろう〜</div>
+            <div class="subtitle col-md-8"><span class="d-none d-lg-inline">〜</span>食品<span class="orange">添</span>加物について<span class="orange">知る</span>ことで<br class="d-lg-none">健康になろう<span class="d-none d-lg-inline">〜</span></div>
+        </div>
         </div>
         
         <div class="text-right">
