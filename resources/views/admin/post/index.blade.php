@@ -21,8 +21,8 @@
             <div class="col-md-8">
                 <form action="{{ action('Admin\PostController@index') }}" method="get">
                     <div class="form-group row">
-                        <label class="align-self-center my-0 text-right col-md-2">添加物名</label>
-                        <div class="col-md-8">
+                        <label class="align-self-center my-0 text-lg-right col-md-2 mb-2 mb-lg-0">添加物名</label>
+                        <div class="col-md-8 mb-2 mb-lg-0">
                             <input type="text" class="form-control" name="input" value="{{ $input }}">
                         </div>
                         <div class="col-md-2">
