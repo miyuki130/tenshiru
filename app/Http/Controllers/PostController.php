@@ -13,11 +13,10 @@ class PostController extends Controller
         if ($input != '') {
         $posts = Post::where('additive', 'like',"%{$input}%")->paginate(10);
         } else {
-            //$posts = Post::all()->sortBy('additive');
             $posts = Post::orderBy('lisk','asc')->paginate(10);
         }
         
-        return view('post.index',['posts' => $posts,'input' => $input]);
+        return view('post.index', ['posts' => $posts, 'input' => $input]);
     }
     
     public function show(Request $request)
