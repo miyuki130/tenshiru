@@ -1,11 +1,11 @@
 # てんしる　
-### 〜食品添加物について知ることで健康になろう〜
+### 　〜食品添加物について知ることで健康になろう〜
 
 画像
 
 よく使用されてる「添加物名」を一覧としており、簡単に調べることが出来ます。
 
-## 概要、制作した経緯
+## 制作した経緯
 私自身、以前から食品添加物について興味を持っており、友人と食品添加物の危険性について話をすることがありました。
 その時に感じたのは、知識が少ないこと、本当は健康のために良い商品を選択したいと思っているということでした。
 
@@ -17,20 +17,20 @@
 Gazo
 　
 ## URL
-閲覧者用画面：
-管理者用画面：
-　テストログインボタンを押すことでログインできます。
-　（メールアドレス：test@example.com　パスワード：test#1234　）
+閲覧者用画面：https://gentle-peak-00140.herokuapp.com/post<br>
+管理者用画面：https://gentle-peak-00140.herokuapp.com/admin/post<br>
+   テストログインボタンを押すことでログインできます。<br>
+   （メールアドレス：test@example.com　パスワード：test#1234　）
 　
 ## 使用技術
-php 
-Laravel 5.8
-HTML、CSS
-Bootstrap
-Mysql
-AWS
-　EC２
-　cloud９
+* php<br>
+* Laravel 5.8<br>
+* HTML、CSS<br>
+* Bootstrap<br>
+* Mysql<br>
+* AWS<br>
+   * EC２<br>
+   * cloud９<br>
 　
 ## AWS構成図
 
