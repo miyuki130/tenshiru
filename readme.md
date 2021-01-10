@@ -11,28 +11,28 @@
 そこで、食品添加物について知ってもらうことで、良い商品を選択できていない人々が多い社会を変えたいという思いでこのサイトを作りました。
 
 ## 機能一覧
-* 閲覧者側
-Gazo動画
+* 閲覧者側<br>
+Gazo動画<br>
 
-   * 一覧画面表示、「もっと詳しく」から詳細画面表示
+   * 一覧画面表示、「もっと詳しく」から詳細画面表示<br>
 
-* 管理者側
-Gazo動画
+* 管理者側<br>
+Gazo動画<br>
 
-   * 記事、画像投稿機能
-   * 投稿内容編集・削除機能
-   * 認証機能
-* 共通
-   * 検索機能　　
-   * ページネーション機能
-   * 検索機能
-   * breadcrumb機能
+   * 記事、画像投稿機能<br>
+   * 投稿内容編集・削除機能<br>
+   * 認証機能<br>
+* 閲覧者側、管理者側　共通<br>
+   * 検索機能<br>　　
+   * ページネーション機能<br>
+   * 検索機能<br>
+   * breadcrumb機能<br>
 　
 ## URL
-閲覧者用画面：https://gentle-peak-00140.herokuapp.com/post<br>
-管理者用画面：https://gentle-peak-00140.herokuapp.com/admin/post<br>
-   テストログインボタンを押すことでログインできます。<br>
-   （メールアドレス：test@example.com　パスワード：test#1234　）
+* 閲覧者用画面：https://gentle-peak-00140.herokuapp.com/post<br>
+* 管理者用画面：https://gentle-peak-00140.herokuapp.com/admin/post<br>
+   * テストログインボタンを押すことでログインできます。<br>
+   * （メールアドレス：test@example.com　パスワード：test#1234）
 　
 ## 使用技術
 * php<br>
