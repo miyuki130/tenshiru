@@ -16,7 +16,7 @@ class Postcontroller extends Controller
     
     public function create(Request $request)
     {
-        \DB::transaction(function(){
+        \DB::transaction(function() use ($request){
                     
             $this->validate($request, Post::$rules);
         
@@ -40,12 +40,7 @@ class Postcontroller extends Controller
     public function index(Request $request)
     {
         $input = $request->input;
-        // if ($input != '') {
-        // $posts = Post::where('additive', 'like',"%{$input}%")->paginate(10);
-        // } else {
-        //     $posts = Post::orderBy('lisk','asc')->paginate(10);
-        // }
-        
+
         $posts = Post::query()
             ->when($input,function($query, $value){
                 $query->where('additive', 'like',"%{$value}%");
@@ -69,12 +64,12 @@ class Postcontroller extends Controller
     
     public function update(Request $request)
     {
-        \DB::transaction(function(){
+        \DB::transaction(function() use($request){
                 
             $this->validate($request, Post::$rules);
             $post = Post::find($request->id);
             $form = $request->all();
-            
+        
             if ($request->remove == 'true') {
                 $form['image_path'] = null;
             } elseif ($request->file('image')) {
@@ -94,7 +89,7 @@ class Postcontroller extends Controller
     
     public function delete(Request $request)
     {
-         \DB::transaction(function(){
+         \DB::transaction(function() use ($request){
             $post = Post::find($request->id);
         
             $post->delete();
