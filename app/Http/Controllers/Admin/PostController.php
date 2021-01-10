@@ -40,11 +40,19 @@ class Postcontroller extends Controller
     public function index(Request $request)
     {
         $input = $request->input;
-        if ($input != '') {
-        $posts = Post::where('additive', 'like',"%{$input}%")->paginate(10);
-        } else {
-            $posts = Post::orderBy('lisk','asc')->paginate(10);
-        }
+        // if ($input != '') {
+        // $posts = Post::where('additive', 'like',"%{$input}%")->paginate(10);
+        // } else {
+        //     $posts = Post::orderBy('lisk','asc')->paginate(10);
+        // }
+        
+        $posts = Post::query()
+            ->when($input,function($query, $value){
+                $query->where('additive', 'like',"%{$value}%");
+            })
+            ->orderBy('lisk','asc')
+            ->orderBy("id","asc")
+            ->paginate(10);
 
         return view('admin.post.index', compact('posts','input'));
     }
