@@ -6,9 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    protected $guarded = array('id');
-    
-    public static $rules = array(
+            
+    protected $fillable = [
+        'additive', 
+        'hurigana',
+        'purpose',
+        'dangerous',
+        'example',
+        'comment',        
+        'lisk',
+        'image_path',
+    ];
+            
+    public static $rules = [
         'additive' => 'required',
         'hurigana' => 'required',
         'purpose' => 'required',
@@ -16,5 +26,5 @@ class Post extends Model
         'example' => 'required',
         'comment' => 'required',
         'lisk' => 'required',
-        );
+    ];
 }
