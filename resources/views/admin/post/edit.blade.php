@@ -40,7 +40,7 @@
                     </div>
                     
                     <div class="form-group row">
-                        <label class="col-md-2"></label>
+                        <label class="col-md-2">使用目的</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="purpose" rows="5">{{ $form->purpose }}</textarea>
                         </div>
