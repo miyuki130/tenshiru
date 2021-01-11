@@ -29,7 +29,7 @@
                             {{ csrf_field() }}
                             <input type="submit" class="btn btn-primary" value="検索">
                         </div>
-                    </div>    
+                    </div>
                 </form>
             </div>
         </div>

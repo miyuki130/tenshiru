@@ -1,6 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;
+@import url(https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&display=swap);@charset "UTF-8";
 
-400&display=swap);@charset "UTF-8";
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 
 :root {
   --blue: #3490dc;

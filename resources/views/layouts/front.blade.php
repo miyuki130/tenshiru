@@ -17,14 +17,13 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
         {{-- Googleフォントを読み込む --}}
         
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         {{--Laravel標準で用意されているCSS読みこむ--}}
         
         <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
-        {{--この章の後半で作成するCSSを読みこむ--}}
+        {{--作成するCSSを読みこむ--}}
         
     </head>
     <body>

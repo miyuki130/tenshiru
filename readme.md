@@ -51,7 +51,7 @@ PHPと、Laravelを使って開発しています。
 * [開発環境]<br>
    * AWS EC2<br>
    * AWS Cloud９<br>
-   * S3(画像保存)<br>
+   * S3（画像保存）<br>
 * [公開環境]<br>
    * Heroku<br>
    * S3（画像保存）

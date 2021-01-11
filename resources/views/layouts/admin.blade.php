@@ -21,7 +21,7 @@
         {{--Laravel標準で用意されているCSS読みこむ--}}
         
         <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
-        {{--この章の後半で作成するCSSを読みこむ--}}
+        {{--作成するCSSを読みこむ--}}
         
     </head>
     <body>
