@@ -16,7 +16,7 @@ class PostController extends Controller
                 $query->where('additive', 'like',"%{$value}%");
             })
             ->orderBy('lisk','asc')
-            ->orderBy("id","asc")
+            ->orderBy('id','asc')
             ->paginate(10);
         
         return view('post.index', compact('posts','input'));
@@ -25,6 +25,7 @@ class PostController extends Controller
     public function show(Request $request)
     {
         $post = Post::find($request->id);
+        
         return view('post.show',compact('post'));
     }
     

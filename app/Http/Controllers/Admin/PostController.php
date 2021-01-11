@@ -26,10 +26,9 @@ class Postcontroller extends Controller
             if (isset($form['image'])) {
             $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
             $post->image_path = Storage::disk('s3')->url($path);
-          } else {
+            } else {
               $post->image_path = null;
-          }
-          
+            }
             
             $post->fill($form)->save();
         });
@@ -46,7 +45,7 @@ class Postcontroller extends Controller
                 $query->where('additive', 'like',"%{$value}%");
             })
             ->orderBy('lisk','asc')
-            ->orderBy("id","asc")
+            ->orderBy('id','asc')
             ->paginate(10);
 
         return view('admin.post.index', compact('posts','input'));
@@ -89,11 +88,11 @@ class Postcontroller extends Controller
     
     public function delete(Request $request)
     {
-         \DB::transaction(function() use ($request){
+        \DB::transaction(function() use ($request){
             $post = Post::find($request->id);
         
             $post->delete();
-         });
+        });
         return redirect('admin/post');
     }
     
